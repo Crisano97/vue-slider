@@ -1,9 +1,11 @@
 const app = new Vue(
     {
         el: '#app',
+
         data: {
-            
-            index : 0,
+            activeClass: 'active',
+
+            index: 0,
 
             slides: [
                 {
@@ -42,10 +44,11 @@ const app = new Vue(
             },
             prevSlideImg: function () {
                 this.index = this.index - 1;
-                if (this.index === -1) {
+                if (this.index === - 1) {
                     this.index = this.slides.length - 1;
                 }
-            }
+            },
+            
         }
     }
 )
